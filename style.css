@@ -2,7 +2,7 @@
 
 .root {
     --color-primary: #7380ec;
-    --color-danger: #ff7782;
+    --color-danger: red;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
     --color-white: #fff;
@@ -60,7 +60,7 @@ body {
 }
 
 a {
-    color: var(--color-dark)
+    color: var(--color-dark);
 }
 
 img{
@@ -102,7 +102,7 @@ small {
     color: var(--color-info-dark);
 }
 
-p{
+p {
     color:var(--color-dark-variant);
 }
 b {
@@ -124,5 +124,22 @@ aside {
     height: 100vh;
     background: gray;
 
+}
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1.4rem;
+}
 
+aside .logo{
+    display: flex;
+    gap:0.8rem;
+
+}
+
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
 }
