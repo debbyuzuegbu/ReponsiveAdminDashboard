@@ -505,7 +505,43 @@ main .recent-orders a {
     main .insights{
         grid-template-columns: 1fr;
         gap: 0;
-        
+    }
+    main .recent-orders {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+
+    }
+    main .recent-orders table{
+        width: 83vw;
     }
 
+    main table tbody tr td:last-child, main table thead tr th:last-child,
+    main table tbody tr td:first-child, main table thead tr th:first-child {
+        display: none;
+    }
+    }
+    /*---- Media Queries for phone--------- */
+    @media screen and (max-width: 768px) {
+        .container{
+            width: 100%;
+        }
+        aside {
+            position: fixed;
+            left: 0;
+            background: var(--color-white);
+            width: 18rem;
+            z-index: 3;
+            box-shadow: 1rem 3rem 4rem var(--color-light);
+            height: 100vh;
+            padding-right: var(--card-padding);
+        }
+        aside .logo{
+            margin-left: 1rem;
+        }
+        aside .logo h2{
+            display: inline
+        }
     }
