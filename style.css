@@ -476,6 +476,7 @@ main .recent-orders a {
 }
 .right .sales-analytics .item.customers .icon{
     background: var(--color-success);
+    
 }
 .right .sales-analytics .add-product{
     background-color: transparent;
