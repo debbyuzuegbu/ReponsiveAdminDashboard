@@ -501,7 +501,7 @@ main .recent-orders a {
 .right .sales-analytics .add-product div h3{
     font-weight: 600;
 }
-/*---- Media Queries--------- */
+/*---- Media Queries for mini laptops/ipads--------- */
 @media screen and (max-width: 1200px) {
     .container {
       width: 94%;

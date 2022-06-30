@@ -3,17 +3,17 @@ const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
 const themeToggler = document.querySelector(".theme-toggler");
 
-// show sidebar
+// Show Sidebar
 menuBtn.addEventListener('click', () => {
     sideMenu.style.display = 'block';
 })
 
-// close sidebar
+// Close Sidebar
 closeBtn.addEventListener('click', () => {
     sideMenu.style.display = 'none';
 })
 
-// change theme
+// Change Theme
 themeToggler.addEventListener ("click", () =>{
     document.body.classList.toggle('dark-theme-variables');
     
@@ -21,7 +21,7 @@ themeToggler.addEventListener ("click", () =>{
     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 
 })
-// fill orders in table
+// Fill orders in table
 orders.forEach(orders => {
     const tr = document.createElement('tr');
     const trContent = `<td>${order.productName}</td>
